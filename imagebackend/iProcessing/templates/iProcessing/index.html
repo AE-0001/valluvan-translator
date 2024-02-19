@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>வள்ளுவன்</title>
+</head>
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+html{
+  height: 100%;
+  transition: background-color 5s,color 0.25s;
+}
+
+
+.valluvan{
+    color: rgb(234, 249, 255);
+}
+
+.para{
+    color: #fff;
+}
+
+h1{
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: #fff;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    color: black;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(38,64,139,1) 84%);
+    letter-spacing: 1px;
+    transition: background-color 0.25s,color 0.25s;
+    height: 150vh;
+}
+
+/* div{
+  margin-bottom: 2rem;
+} */
+
+:root{
+    --light-color: #fff;
+    --light-color-alt: #afb6cd;
+    --primary-background-color: #171713;
+    --secondary-background-color: #252830;
+    --hover-light-color: var(--light-color);
+    --hover-dark-color: var(--primary-background-color);
+    --gradient-color: linear-gradient(
+        115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    --transparent-light-color: rgba(255,255,255,.05);
+    --transparent-dark-color: rgba(0,0,0,.75);
+    --font-family: 'Poppins', sans-serif;
+    --font-family2: 'Source Sans Pro', sans-serif;
+    --font-size-xsm: 1.2rem;
+    --font-size-sm: 1.6rem;
+    --font-size-md: 2.4rem;
+    --font-size-lg: 3rem;
+    --font-size-xl: 4rem;
+    --gap: 2rem;
+    --margin-sm: 2rem;
+    --margin-md: 3rem;
+    --item-min-height-sm: 20rem;
+    --item-min-height-md: 30rem;
+}
+
+form{
+    margin: auto; 
+    font-family: var(--font-family);
+    color: var(--primary-background-color);
+    background-color: rgb(206, 227, 250);
+    font-size: 10;
+    padding: 1rem;
+    border-radius: 9px;
+    text-align: center;
+    height: 555px; 
+    margin-top: 10rem;
+    position: absolute;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    
+}
+
+.audio{
+  margin: auto; 
+  margin-bottom: 2rem;
+    font-family: var(--font-family);
+    color: var(--primary-background-color);
+    background-color: rgb(206, 227, 250);
+    font-size: 10;
+    padding: 1rem;
+    position: absolute;
+    margin-top: 50rem;
+    border-radius: 9px;
+    text-align: center;
+    height: 20%;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+   }
+
+.text {
+   
+    margin: auto; 
+    margin-bottom: 2rem;
+    font-family: var(--font-family);
+    color: var(--primary-background-color);
+    background-color: rgb(206, 227, 250);
+    font-size: 10;
+    padding: 1rem;
+    border-radius: 9px;
+    text-align: center;
+    position: absolute;
+    margin-top: 65rem;
+    /* height: ; */
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+   
+
+}
+input{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(234, 249, 255);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* input[type ="file"]{
+    display:none;
+}
+.camera{
+    display:inline;
+} */
+
+.label1{
+    cursor: pointer;
+     color: black;
+    height: 40px;
+    width: 200px;
+    background-color: #44ce7b; 
+}
+
+
+.details{
+  text-align:inherit;
+  padding-right: 10rem;
+   /* margin-left: 15rem;
+  margin-bottom: 0.3rem;  */
+  margin: auto;
+}
+.detail{
+  text-align:inherit;
+  padding-right: 8rem;
+   /* margin-left: 15rem;
+  margin-bottom: 0.3rem;  */
+  margin: auto;
+}
+
+label{
+    font-size:20px;
+    padding: 1rem;
+    margin:2rem;
+    font-weight: 500;
+    /* font-style: oblique; */
+    /* font-family: var(--font-family2); */
+}
+
+input::placeholder{
+    text-align:left;
+    box-sizing: border-box;
+    margin: auto;
+    font-size: medium;
+}
+
+.email{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    border-color: transparent;
+    
+}
+
+
+.email:hover{
+    border-color: #4d4de4;
+    border-radius: 4px;
+}
+.password{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.2rem;
+    margin-bottom: 1.2rem;
+
+    border-radius: 5px;
+    text-decoration: none;
+    border-color: transparent;
+}
+
+.password:hover{
+  border-color: #4d4de4;
+  border-radius: 4px;
+}
+
+/* CSS */
+.button{
+  appearance: none;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #1A1A1A;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 10px;
+  min-width: 0;
+  outline: none;
+  padding: 6px 3px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 50%;
+  height: 11%;
+  will-change: transform;
+  text-decoration: none;
+}
+
+.button:disabled {
+  pointer-events: none;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.button::after{
+  opacity: 0;
+    transform: scale(0);
+    transition: opacity .25s ease-in;
+}
+.para{
+  margin-top: 6rem;
+}
+p{
+  color: #171713;
+  margin: auto;
+  height: 10%;
+  font-size: small;
+}
+    </style>
+    <h1 class="valluvan">VALLUVAN</h1>
+    <!-- <p class="para">your name board translator</p> -->
+    
+    <form action="{% url 'processImage' %}" method="POST" enctype="multipart/form-data">
+        <style>
+            input[type="file"] {
+          display: none;
+      }
+      
+      .custom-file-upload {
+          border: 1px solid #ccc;
+          display: inline-block;
+          padding: 6px 12px;
+          cursor: pointer;
+      }
+
+      #file-upload{
+        border: 2px solid black;
+
+      }
+audio{
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 20%;
+    width: 75%;
+    color:rgb(0, 0, 0) ;
+    opacity: 1;
+    background-color: rgb(213, 231, 250);
+    border: 2px solid transparent;
+    margin-left: 10%;
+    /* border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1; */
+    /* border-image: linear-gradient(to bottom right, #d99543 0%, #5F3519 100%); */
+    border:2px solid rgba(38,64,139,1);
+    border-radius: 20px;
+    border-image-slice: 3;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  }
+
+.paragraph{
+    
+    background-image: url("{{bilink}}");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgb(213, 231, 250); */
+    /* background-color: rgb(10, 241, 72); */
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+
+}
+
+.h2{
+  margin-bottom: 1rem;
+}
+
+.radio-input{
+    font-size:12px;
+    margin:0px;
+    /* padding-left: 0; */
+    position: relative;
+    justify-content:left;
+    align-content: flex-end;
+    align-items: center;
+}
+
+.radiob{
+  padding: 1rem;
+  padding-top: 1rem;
+  border-radius: 5px;
+  border: 2px solid black;
+
+}
+.radio1{
+  font-size: 17px;
+  margin: 0;
+  /* padding-bottom: 5rem; */
+}
+
+.radio2{
+  font-size: 17px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  margin: 0;
+}
+.para2{
+  padding-right: 88px;
+
+}
+.select{
+  font-size: 13px;
+  padding-bottom: 1rem;
+}
+         </style>
+   
+        <b><h2 class="h2" style="font-size: 13px;">கேலரியில் படத்தை தேர்வு செய்யவும்</h2></b>
+        <label class="button" for="file-upload"> Choose an image</label><br>
+        <input  class="custom-file-upload" id="file-upload" type="file" accept="image/*" name="picture"></input> <br>
+
+      <b><h5 style="font-size: 14px;"> கேமராவில் இருந்து படம் எடுக்கவும் </h5></b>
+        <label class="button" for="camera_input"> Take a picture</label> 
+        <input  type="file" id="camera_input"name="picture" accept="image/*" capture=""></input><br>
+         <label for="" class="radio-input">
+     
+          <h2 class="select"> புகைப்பட வகையைத் தேர்ந்தெடுக்கவும்</h2>
+
+        <div class="radiob">
+          <p class="para2">
+        <input class="radio-input" type="radio" name="image-type" value="name-board" id="test1" required>
+        <label class="radio1" for="test2">பெயர் பலகை</label>
+      </p>
+      <p>
+        <input class="radio-input" type="radio" name="image-type" value="handwritten" id="test2" required>
+        <label class="radio2" for="test2">கையால் எழுத்துபட்டது</label>
+      </p>
+      </div>
+        <!-- <p>
+          <input type="radio" id="test2" name="radio-group">
+          <label for="test2">Peach</label>
+        </p> -->
+    </label>
+
+        <label for="image"></label> <br>
+        <input class="button" type="submit" name="Upload" value="Upload"></input> <br>
+    </form><br>
+    
+     {% if audioready %}
+       <div class="audio">
+        <h6> இதுவே உங்கள் ஆடியோ </h6>
+        <audio controls>
+          <source src="{{ link }}" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio><br>
+    </div>
+
+
+    
+     <div class="text">
+      <h6 style="font-size: 18px;">இதுவே உங்கள் தமிழ் உரை</h6>
+      <div class="paragraph">
+      <p>{{ text }}</p>
+     </div><br><br>
+     </div><br><br>
+
+
+    {% endif %}
+    
+    <div>
+      <p>.</p>
+    </div>
+
+
+</body>
+</html>
+
